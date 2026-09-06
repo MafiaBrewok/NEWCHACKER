@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizhTracker v3.0 - Roblox Account Checker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header App -->
+    <header class="app-header">
+      <div class="logo">
+        <span style="font-size: 28px;">🎮</span>
+        <h1>FizhTracker <span>v3.0</span></h1>
+      </div>
+      <p>Roblox Account & Inventory Automated Checker</p>
+    </header>
+
+    <!-- Global Webhook Input -->
+    <div class="card webhook-card">
+      <label for="discordWebhook">Discord Webhook URL (Opsional):</label>
+      <input type="text" id="discordWebhook" placeholder="https://discord.com/api/webhooks/..." autocomplete="off">
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="main-grid">
+      
+      <!-- Single Check Section -->
+      <section class="card">
+        <h2>Single Check</h2>
+        <p class="subtitle">Periksa 1 cookie / data akun Roblox</p>
+        
+        <div class="input-group">
+          <textarea id="singleInput" rows="4" placeholder="Masukkan .ROBLOSECURITY Cookie atau Login Data..."></textarea>
+          <button onclick="handleSingleCheck()" class="btn btn-primary">Check Account</button>
+        </div>
+
+        <div id="singleResult" class="result-box"></div>
+      </section>
+
+      <!-- Bulk Check Section -->
+      <section class="card">
+        <h2>Bulk Check (.txt File)</h2>
+        <p class="subtitle">Upload dokumen .txt (1 data per baris)</p>
+        
+        <div class="input-group">
+          <input type="file" id="bulkFile" accept=".txt">
+          <button onclick="handleBulkCheck()" class="btn btn-secondary">Start Bulk Check</button>
+        </div>
+
+        <div id="bulkResult" class="result-box"></div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="check.js"></script>
+</body>
+</html>
