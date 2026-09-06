@@ -1,0 +1,161 @@
+/* ==========================================
+   FIZHTRACKER V3.0 - DARK NEON THEME
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0a090d;
+  color: #e2e1e8;
+  min-height: 100vh;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.logo h1 span {
+  font-size: 14px;
+  background: #ff3399;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  vertical-align: middle;
+  box-shadow: 0 0 10px rgba(255, 51, 153, 0.5);
+}
+
+.app-header p {
+  color: #7a7593;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Card Style */
+.card {
+  background: #110f18;
+  border: 1px solid #232033;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #7a7593;
+  margin-bottom: 14px;
+}
+
+.webhook-card label {
+  display: block;
+  font-size: 12px;
+  color: #a09abc;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.webhook-card input,
+textarea,
+input[type="file"] {
+  width: 100%;
+  background: #171522;
+  border: 1px solid #2e2a42;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.webhook-card input:focus,
+textarea:focus {
+  border-color: #ff3399;
+}
+
+/* Main Layout Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Buttons & Inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 13px;
+}
+
+.btn-primary {
+  background: #ff3399;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(255, 51, 153, 0.3);
+}
+
+.btn-primary:hover {
+  background: #e62e8a;
+}
+
+.btn-secondary {
+  background: #2e2a42;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #3c3756;
+}
+
+.result-box {
+  min-height: 50px;
+  font-size: 13px;
+}
